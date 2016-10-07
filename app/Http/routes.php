@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 
 Route::post('auth', 'MainController@login');
+Route::post('reg', 'MainController@register');
 
 Route::get('error', function()
     {

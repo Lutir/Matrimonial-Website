@@ -67,7 +67,7 @@
 				<div class="space-small"></div>				
 				<div class="col-md-3"></div>
 				<div class="col-md-6  regForm">
-					{!! Form::open(array( 'action' => 'MainController@login', 'method'=>'POST')) !!}
+					{!! Form::open(array( 'action' => 'MainController@register', 'method'=>'POST')) !!}
 						<div class="col-xs-6">
 							<div class="form-group">
 							<label for="firstName">First Name</label>
