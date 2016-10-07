@@ -1,0 +1,145 @@
+*{
+	padding: 0px;
+	margin: 0px;		
+}
+body{
+	background-image: url('../images/register.jpg');
+	background-position: center;
+	height: 100%;
+}
+
+@font-face{
+	font-family: raleway;
+	src: url('../fonts/raleway/raleway');
+}
+@font-face{
+	font-family: roboto;
+	src: url('../fonts/roboto/Roboto-Regular.tt');
+}
+
+.space-small{
+	height: 20px;
+}
+
+.space-medium{
+	height: 40px;
+}
+
+.space-large{
+	height: 80px;
+}
+
+.navbar{
+	font-family: raleway;
+	padding-top: 25px;
+	width: 80%;
+	margin: 0 auto;
+	background: transparent;
+	border: none;
+	color: white;
+}
+
+.navbar .navbar-brand{
+	font-size: 22px;		
+	color:white !important;
+}
+.navbar a{	
+	color: black !important;
+	font-weight: 600;
+	font-size: 18px;		
+}
+
+/*section background*/
+.top-section{
+	/*height: 60vh;
+	background-image: url('../images/register.jpg');
+	background-position: center;
+	box-shadow: 1px 1px 2px #888888;*/
+}
+
+.section-1{
+
+	padding: 30px;	
+}
+.section-1 h2{
+	font-family: roboto;
+	font-weight: 700;
+	color: rgba(255,255,255,0.8);
+}
+.section-1 p{
+	color: rgba(255,255,255,0.8);
+	font-family: raleway;
+	font-weight: 500;
+	font-size: 18px;
+}
+.regForm{
+	color: white;
+	font-family: raleway;
+	background: rgba(0,0,0,0.3);
+	padding: 20px;
+	margin:0 auto;
+}
+.form-group label{
+	font-size: 16px;
+	font-weight:800;
+}
+.form-group{
+	padding: 3px 2px 3px 2px;
+}
+.myButton{
+	background-color: transparent;
+	border-radius: 0px;
+	border: solid 2px #25d5eb;
+	padding: 10px 20px 10px 20px;
+	
+	font-weight: 700;
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	border: 1px solid white;
+	font-weight:400;
+	margin:50px;
+	background: #13a0b2;
+}
+
+.myButton:hover{
+		color: white;
+	border: 1px solid white;
+	font-weight:400;
+	background: #107785;
+	filter: none;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+
+.heart-divider {
+    height: 100%;
+    width: 100%;
+    margin:2em auto;
+    text-align: center;
+}
+.grey-line {
+    width: 30px;
+    height: 8px;
+    display: inline-block;
+    border-top: solid 2px #e1dddd;
+}
+.pink-heart {
+    color:#c32143;
+    font-size: 18px;
+    position: relative;
+    z-index: 3;
+}
+.grey-heart {
+    color: #fff;
+    font-size: 18px;
+    margin-left: -15px;
+    position: relative;
+    z-index: 2;
+}
+.grey-line {
+    width: 30px;
+    height: 8px;
+    display: inline-block;
+    border-top: solid 2px #e1dddd;
+}
