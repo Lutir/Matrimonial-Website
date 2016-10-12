@@ -45,17 +45,36 @@
 						<div class="collapse navbar-collapse navbar-ex1-collapse">							
 							<ul class="nav navbar-nav navbar-right">
 
-								<li>							
-									<a data-toggle="modal" href='#login-modal'><i class="fa fa-user" aria-hidden="true"></i>Login</a>
-								</li>
-								<li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i>
-								Signup</a>
+								<li><a href="register"><i class="fa fa-sign-in" aria-hidden="true"></i>
+								@if(session()->has('username'))
+								    Profile
+								@else 
+								    Signup
+								@endif
+								</a>
 								</li>
 								
+								@if(session()->has('username'))
+								    <li><a href="register"><i class="fa fa-sign-in" aria-hidden="true"></i>Find Matches</a></li>
+								@endif
+
+								<li>							
+									
+									 
+									@if(session()->has('username'))
+									    <a href='{{action('MainController@getLogout')}}'><i class="fa fa-user" aria-hidden="true"></i>Logout
+									@else 
+									    <a data-toggle="modal" href='#login-modal'><i class="fa fa-user" aria-hidden="true"></i>Login
+									@endif
+									
+									</a>
+								</li>
+								
+
 							</ul>
 						</div><!-- /.navbar-collapse -->
 					</div>
-				</nav>
+				</nav>				
 				<!-- navbar ends here -->
 				<div class="welcome">
 					<h2>FIND YOUR SOMEONE SPECIAL</h2>	
@@ -184,7 +203,7 @@
 							<h2>Your Story is Waiting To Happen! </h2>		
 						</div>
 						<div class="col-md-4 col-xs-12 text-center">
-							<a class="myButton">Let's Start</a>
+							<a class="myButton" href="register">Let's Start</a>
 						</div>
 					
 					
@@ -304,6 +323,7 @@
 
 					</div>
 					<div class="modal-footer">						
+						
 					</div>
 				</div>
 			</div>

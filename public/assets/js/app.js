@@ -29,3 +29,6 @@ for(var i=0;i<country.length;i++)
 $('#search_religion').append(religion_list);
 $('#search_motherTongue').append(motherTongue_List);
 $('#search_country').append(country_list);
+
+
+// for profile page

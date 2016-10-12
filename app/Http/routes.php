@@ -17,6 +17,10 @@ Route::get('/', function () {
 
 Route::post('auth', 'MainController@login');
 Route::post('reg', 'MainController@register');
+Route::post('fetchInfo', 'MainController@fetchProfileInfo');
+Route::post('storeInfo', 'MainController@storeProfileInformation');
+Route::post('imageUpload', 'MainController@storeImage' );
+Route::get('logout', 'MainController@getLogout');
 
 Route::get('error', function()
     {
@@ -25,4 +29,8 @@ Route::get('error', function()
 Route::get('register', function()
     {
         return view('register');
+    });
+Route::get('profile', function()
+    {
+        return view('profile');
     });

@@ -10,7 +10,6 @@
 		
 		<link type="text/css" rel="stylesheet" href="{{URL::asset('assets/css/font-awesome-4.6.3/css/font-awesome.min.css')}}" >
 		<link type="text/css" rel="stylesheet" href="{{URL::asset('assets/css/bootstrap.css')}}" >
-		<link type="text/css" rel="stylesheet" href="{{URL::asset('assets/css/style.css')}}" >				
 		
 		<script type="text/javascript" src="{{URL::asset('assets/js/jquery.js')}}"></script>
     

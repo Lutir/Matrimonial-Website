@@ -15,7 +15,7 @@ class RegistrationDetailsTable extends Migration
         //
         Schema::create('user_info', function (Blueprint $table) {
             $table->increments('id');            
-            $table->string('username');
+            $table->string('username')->default('');            
             $table->string('password');
             $table->string('firstName');
             $table->string('lastName');
@@ -25,6 +25,8 @@ class RegistrationDetailsTable extends Migration
             $table->string('religion');
             $table->string('country');
             $table->string('mothertongue');            
+            $table->string('description');
+            $table->string('marital_status');            
             $table->timestamps();
         });
     }

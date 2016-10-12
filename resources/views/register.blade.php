@@ -92,10 +92,21 @@
 								<input type="text" class="form-control" name="username" placeholder="Enter Username" class="username">
 							</div>
 						</div>
-						<div class="col-xs-12">
+						<div class="col-xs-8">
 							<div class="form-group">
 								<label for="password">Password:</label>
-								<input type="text" class="form-control" name="password" placeholder="Enter Password" class="password">
+								<input type="password" class="form-control" name="password" placeholder="Enter Password" class="password">
+							</div>
+						</div>
+						<div class="col-xs-4">
+							<div class="form-group">
+								<label for="maritalStatus">MaritalStatus:</label>
+								<select name="maritalStatus" id="maritalStatus" class="form-control maritalStatus" required="required">
+									<option value="single">Single</option>
+									<option value="married">Married</option>
+									<option value="divorced">Divorced</option>
+									<option value="other">Other</option>
+								</select>
 							</div>
 						</div>
 						<div class="col-xs-2">

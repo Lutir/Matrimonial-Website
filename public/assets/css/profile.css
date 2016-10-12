@@ -1,0 +1,99 @@
+*{
+	padding: 0px;
+	margin: 0px;		
+}
+html{
+	overflow-y: initial;
+	/*background-color: rgba(200,230,190,0.8);*/
+}
+body{
+	/*background:rgba(230,240,190,0.8);*/
+}
+
+@font-face{
+	font-family: raleway;
+	src: url('../fonts/raleway/raleway');
+}
+@font-face{
+	font-family: roboto;
+	src: url('../fonts/roboto/Roboto-Regular.tt');
+}
+
+.navbar{
+	font-family: raleway;
+	padding-top: 25px;
+	width: 80%;
+	margin: 0 auto;
+	background: transparent;
+	border: none;
+	color: white;
+}
+
+.navbar .navbar-brand{
+	font-size: 22px;		
+	color:black !important;
+}
+.navbar a{	
+	color: black !important;
+	font-weight: 600;
+	font-size: 18px;		
+}
+
+.section-1{
+	padding: 40px;
+}
+.section-1 h2{
+	color: black;
+	font-family: raleway;
+	font-weight: 600;
+}
+.profile-container{
+	padding: 20px;
+}
+.options li{
+	text-decoration: none;
+	list-style-type: none;
+	padding:20px 25px 20px 25px;
+	font-size: 18px;
+	font-family: raleway;
+	font-weight: 400;
+}
+.options li:hover{
+	list-style-type: none;
+	padding:20px 25px 20px 25px;
+	cursor: pointer;
+	background: rgba(200,200,200,0.8);
+	transition: all 0.3s ease-in-out 0s;
+}
+
+.heading-main{
+	font-size: 22px;
+	font-weight: 600;
+	font-family: raleway;
+}
+
+.details{
+	padding: 25px;
+}
+.details .form-group{
+	margin:5px;
+}
+
+.form-group label{
+	font-family:raleway;
+	font-weight:1000;
+}
+
+.activated{
+	list-style-type: none;
+	padding:20px 25px 20px 25px;
+	cursor: pointer;
+	background: rgba(200,200,200,0.8);
+	transition: all 0.3s ease-in-out 0s;
+}
+
+.save{
+	padding: 10px 20px 10px 20px;
+	font-weight: 700;
+	font-family: raleway;
+}
