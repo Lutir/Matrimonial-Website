@@ -178,7 +178,7 @@ $.ajaxSetup(
 	        dataType: "json",
 	        success: function(data){
 	        	console.log(data);
-	        	console.log("helo");
+	        	setInformation(data);
 	        	// location.reload();
 	        },
 	        error: function(jqXHR,testStatus,errorThrown){
@@ -186,5 +186,29 @@ $.ajaxSetup(
 	        }
 		});
 
+function setInformation(data)
+{
+	console.log(data);
+	
+	$('#firstName').val(data.firstName);
+	$('#lastName').val(data.lastName);
+	$('#email').val(data.email);
+	$('#occupation').val(data.occupation);
+	$('#company').val(data.company_name);
+	$('#income').val(data.income);
+	$('#raashi').val(data.raashi);
+	$('#complexion').val(data.complexion);
+	$('#fathers_occupation').val(data.fathers_occupation);
+	$('#mothers_occupation').val(data.mothers_occupation);
+	$('textarea#desc').val(data.description);
+
+	$('#search_religion').val(data.religion);
+	$('#search_motherTongue').val(data.mothertongue);
+	$('#search_country').val(data.country);
+	$('#diet').val(data.diet);
+	$('#smoke').val(data.smoke);
+	$('#drink').val(data.drink);
+
+}
 
 });

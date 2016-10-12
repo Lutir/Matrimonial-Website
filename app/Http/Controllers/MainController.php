@@ -180,12 +180,36 @@ class MainController extends Controller
 		Log::info('hello');
 		Log::info($personalInfo);									 
 
+		$info = array('id' => $userInfo['id'],
+					  'username' => $userInfo['username'],
+					  'password' => $userInfo['password'],
+					  'firstName' => $userInfo['firstName'],
+					  'lastName' => $userInfo['lastName'],
+					  'email' => $userInfo['email'],
+					  'sex' => $userInfo['sex'],
+					  'age' => $userInfo['age'],
+					  'religion' => $userInfo['religion'],
+					  'country' => $userInfo['country'],
+					  'mothertongue' => $userInfo['mothertongue'],
+					  'description' => $userInfo['description'],
+					  'marital_status' => $userInfo['marital_status'],
+					  'drinks' => $personalInfo['drinks'],
+					  'diet' => $personalInfo['diet'],
+					  'smoke' => $personalInfo['smoke'],
+					  'raashi' => $personalInfo['raashi'],
+					  'income' => $personalInfo['income'],
+					  'occupation' => $personalInfo['occupation'],
+					  'company_name' => $personalInfo['company_name'],
+					  'fathers_occupation' => $personalInfo['fathers_occupation'],
+					  'mothers_occupation' => $personalInfo['mothers_occupation']
+		 );
 
+		Log::info(json_encode($info));
 
 		Log::info('lol');
 
 
-    	return json_encode('helloworld');
+    	return json_encode($info);
     }
 
     public function storeProfileInformation(Request $request)

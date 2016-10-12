@@ -15,9 +15,9 @@ class PersonalInfoTable extends Migration
         //
         Schema::create('personal_info', function (Blueprint $table) { 
             $table->integer('id')->unsigned();                        
-            $table->boolean('drinks');
+            $table->string('drinks');
             $table->string('diet')->default('veg');
-            $table->boolean('smoke');
+            $table->string('smoke');
             $table->string('raashi')->default('none');
             $table->integer('income')->default(0);
             $table->string('occupation');
